@@ -4,16 +4,15 @@ import './App.css'
 
 function App() {
 
-
-  let Value = 5;
+const [value , setValue] = useState(15);
 
   const addValue = () => {
-  value =  value +1;
-    console.log("its working")
+  setValue(value +1)  ;
+    
   }
   const removeValue = () => {
-  value =  value-1;
-    console.log("its working")
+  setValue (value-1)  ;
+       
   }
   
 
@@ -24,7 +23,7 @@ function App() {
     <>
       
      <h1>
-         Value count {Value}
+         Value count {value}
      </h1>
 
      <button onClick={addValue}>
