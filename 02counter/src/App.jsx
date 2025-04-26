@@ -31,6 +31,7 @@ const [value , setValue] = useState(15);
      </button>
      <br/>
      <button onClick={removeValue}>
+      
                  Remove value     
      </button>
     </>
